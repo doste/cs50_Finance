@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add funds
+{% endblock %}
+
+{% block main %}
+    <form action="/add_funds" method="post">
+        <div class="form-group">
+            <label class="control-label">Add funds</label>
+            <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input name = "amount_to_add" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Add funds</button>
+    </form>
+{% endblock %}
+
